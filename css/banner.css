@@ -1,0 +1,43 @@
+.container {
+    max-width: 1180px;
+}
+
+.banner {
+    position: relative;
+    min-height: 970px;
+    padding: 0 0 50px 0;
+}
+
+.banner:before {
+    position: absolute;
+    content: "";
+    top: 207px;
+    left: 480px;
+    width: 675px;
+    min-height: 762px;
+    background-image: url("../image/gameoverVRman.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner__title {
+    position: absolute;
+    top: 96px;
+    font-weight: 900;
+    font-size: 150px;
+    text-transform: uppercase;
+    width: 883px;
+    height: 150px;
+    letter-spacing: -15px;
+}
+
+.banner__text {
+    position: absolute;
+    top: 246px;
+    left: 100px;
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 120px;
+    color: #fff;
+    line-height: 50px;
+}

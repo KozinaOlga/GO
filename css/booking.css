@@ -1,0 +1,15 @@
+.container {
+    max-width: 1180px;
+}
+
+.booking__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.button {
+    color: #fff;
+}

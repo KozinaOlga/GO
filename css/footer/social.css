@@ -1,0 +1,44 @@
+.social__link {
+    list-style-type: none;
+    padding: 0 0 51px 0;
+}
+
+.social__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 27px;
+}
+
+.social__item-list {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    border-radius: 50%;
+    color: #fff;
+    transition-property: color, outline-colot;
+    transition-duration: 0.3s, 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.social__item-list:hover {
+    color: #cd06ff;
+}
+
+.social__item-list:focus {
+    outline-color: #cd06ff;
+}
+
+.social__item-list:active {
+    color: #840aa3;
+}
+
+social:not(:last-child) {
+    margin-right: 20px;
+}
+

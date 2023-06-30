@@ -1,0 +1,51 @@
+.comments__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.comments__block {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.colomn {
+    margin-right: 20px;
+}
+
+.comments__block-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 250px;
+
+}
+
+.comments__text {
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.comments__par {
+    width: 680px;
+}
+
+.comments-name {
+    width: 280px;
+    text-align: center;
+}
+
+
+

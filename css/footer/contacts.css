@@ -1,0 +1,53 @@
+.footer {
+    padding: 50px 0;
+}
+.address-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.address__location-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 37px;
+}
+
+.address__text {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.address__item_contact-text {
+    margin-bottom: 38px;
+}
+.address__item_contact-phone {
+    margin-bottom: 11px;
+}
+
+.address__item_contact-mail {
+    margin-bottom: 39px;
+}
+
+.address__location-phone {
+    margin-right: 36px;
+}
+
+.address__location-mail {
+    margin-right: 27px;
+}
+
+.address__mail,
+.address__phone {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
