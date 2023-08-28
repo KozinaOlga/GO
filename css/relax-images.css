@@ -1,0 +1,53 @@
+.relax__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 41px;
+}
+
+.relax__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.relax__item {
+    position: relative;
+    display: block;
+    width: 380px;
+    height: 228px;
+}
+
+.relax__item_image-vr {
+    background-image: url(../img/vr.jpg);
+}
+
+.relax__item_image-audio {
+    background-image: url(../img/audio.jpg);
+}
+
+.relax__item_image-micro {
+    background-image: url(../img/micro.jpg);
+}
+
+.relax__item_image-game {
+    background-image: url(../img/game.jpg);
+}
+
+.relax__item_image-netflix {
+    background-image: url(../img/netflix.jpg);
+}
+
+.relax__item_image-sony {
+    background-image: url(../img/sony.jpg);
+}
+
+.relax__text {
+    position: absolute;
+    top: 166px;
+    left: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}

@@ -1,0 +1,37 @@
+.header {
+    padding: 38px 0 50px 0;
+
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation__list {
+    display: inline-flex;
+    align-self: center;
+    gap: 40px;
+}
+
+.navigation__link {
+    font-size: 22px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: flex;
+    align-self: center;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 3px solid #CD06FF;
+    padding: 12px 32px 13px 32px;
+    cursor: pointer;
+}

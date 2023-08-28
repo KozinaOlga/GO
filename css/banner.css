@@ -6,6 +6,7 @@
     position: relative;
     min-height: 970px;
     padding: 0 0 50px 0;
+    border: 1px solid green;
 }
 
 .banner:before {
@@ -41,3 +42,4 @@
     color: #fff;
     line-height: 50px;
 }
+

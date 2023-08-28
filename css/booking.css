@@ -1,14 +1,148 @@
-.container {
+.booking__block {
     max-width: 1180px;
 }
+
+.form {
+    background-color: #440F51;
+}
+
 
 .booking__title {
     text-align: center;
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+    max-width: 1180px;
+    margin-bottom: 40px;
+}
+
+.booking__title2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 1180px;
+    margin-bottom: 40px;
+}
+
+.booking__choose-room {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
     margin-bottom: 60px;
 }
+
+.booking__button {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    height: 55px;
+}
+
+.booking__subtitle-legent{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.booking__subtitle-legent_margin {
+    margin-bottom: 23px;
+}
+
+
+.booking__block {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.booking__different-games {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__label {
+    display: flex;
+    gap: 20px 20px;
+}
+
+.booking__label:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    width: 27px;
+    height: 27px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+.booking {
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+}
+
+.booking__date-size,
+.booking__time-size {
+    width: 134px;
+    height: 52px;
+}
+
+
+
+.block-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__wrapper-block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+.booking__wrapper-name,
+.booking__wrapper-phone,
+.booking__wrapper-surname,
+.booking__wrapper-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__wrapper-block-interval {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.booking__input-number,
+.booking__input-phone,
+.booking__input-email {
+    width: 300px;
+    height: 52px;
+}
+
+.booking__input-name,
+.booking__input-surename {
+    width: 280px;
+    height: 52px;
+}
+
 
 .button {
     color: #fff;

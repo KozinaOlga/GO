@@ -12,7 +12,7 @@
     background-size: contain;
     background-position: center;
     width: 1180px;
-    height: 710px;
+    min-height: 710px;
 }
 
 .rooms__item:not(:last-child) {
