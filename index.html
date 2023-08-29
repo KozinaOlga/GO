@@ -10,8 +10,6 @@
 
 <body class="body">
 
-
-
   <header class="header">
     <div class="container">
       <div class="container__header">
@@ -46,22 +44,41 @@
   <div class="container">
 
   <section class="banner">
-    <div class="container banner">
+    <div class="container">
+
+      <div class="banner-text">
         <h2 class="banner__title">game over</h2>
         <p class="banner__text">Новый формат игр и отдыха</p>
-    </div>
+      </div>
 
-    <div class="">
+      <div class="banner-block__wrapper">
+        <div class="banner-block_column">
+          <p class="banner-block__text_color">4</p>
+          <p class="banner-block__text">Тематических зала</p>
+        </div>
+          
+        
+        <div class="banner-block_column-small">
+          <p class="banner-block__text_color-small">NEW</p>
+          <p class="banner-block__text">Новейшая аппартура</p>
+        </div>
 
+      </div>
 
-      
-    </div>
+      <div class="batton__banner-block">
+        <button class="button__banner-color" type="submit">Забронировать</button>
+      </div>
 
-
-
-
-
-
+      <button class="button-down">
+        <a href="#">
+          <svg class="banner__svg" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="48.5" cy="48.5" r="48" stroke="white" />
+            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white" />
+            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white" />
+        </svg>
+        </a>
+      </button>
+      </div>
   </section>
 
   <section class="relax">
@@ -94,16 +111,16 @@
     <div class="container">
       <h2 class="rooms__title" id="rooms__title">Наши залы</h2>
       <ul class="rooms__list">
-        <li  class="rooms__item rooms__item_image-vibes">
+        <li  class="rooms__item rooms__item_image-vibes room__items_size">
           <a class="rooms__link rooms__link_text" href="/rooms/vibes.html">80's vibes</a>
         </li>
-        <li class="rooms__item rooms__item_image-starwars">
+        <li class="rooms__item rooms__item_image-starwars room__items_size">
           <a class="rooms__link rooms__link_text" href="/rooms/starwars.html">Star wars</a>
         </li>
-        <li class="rooms__item rooms__item_image-wildwest">
+        <li class="rooms__item rooms__item_image-wildwest room__items_size">
           <a class="rooms__link rooms__link_text" href="/rooms/wildwest.html">Wild west</a>
         </li>
-        <li class="rooms__item rooms__item_image-neon">
+        <li class="rooms__item rooms__item_image-neon room__items_size">
           <a class="rooms__link rooms__link_text" href="/rooms/neon.html">Neon style</a>
         </li>
       </ul>
@@ -114,7 +131,7 @@
 
     <form class="form" action="https://jsonplaceholder.typicode.com/posts"
     method="POST">
-    <div class="container">
+    <div class="container form__block">
       <fieldset class="booking" id="book">
         <h2 class="booking__title" id="booking__title">Забронировать зал просто</h2>
 
@@ -126,7 +143,6 @@
             <button class="booking__button">Neon style</button>
           </div>
 
-  
           <fieldset class="booking">
             <legend class="booking__subtitle-legent">Собери набор развлечений</legend>
                 
@@ -190,7 +206,6 @@
 
             </div>
 
-  
           </fieldset>
   
         <fieldset class="booking">
@@ -206,40 +221,41 @@
                 <input type="time" name="time" id="time" required class="booking__time-size">
               </label>
 
-              <label class="booking__wrapper-name">Имя
-                <input type="text" name="text" required class="booking__input-name">
+              <label class="booking__wrapper-number">
+                <input type="text" name="number" required class="booking__input-number" placeholder="Сколько человек">
               </label>
-
-              <label class="booking__wrapper-phone">Телефон
-                <input type="tel" name="phone" required class="booking__input-phone" pattern="\d">
-              </label>
-  
             </fieldset>
 
             <fieldset class="booking__wrapper-block-interval">
-              <label class="booking__wrapper-number">
-                <input type="text" name="number" required class="booking__input-number" placeholder="Сколько человек">
+              <label class="booking__wrapper-name">Имя
+                <input type="text" name="text" required class="booking__input-name">
               </label>
 
               <label class="booking__wrapper-surname">Фамилия
                 <input type="text" name="text" required class="booking__input-surename">
               </label>
+            </fieldset>
+
+            <fieldset class="booking__wrapper-block-interval">
+              <label class="booking__wrapper-phone">Телефон
+                <input type="tel" name="phone" required class="booking__input-phone" pattern="\d">
+              </label>
     
               <label class=" booking__wrapper-email">E-mail
                 <input type="text" name="mail" required class="booking__input-email">
               </label>
+
             </fieldset>
           </div>
         </fieldset>
-  
-        <button class="button" type="submit" formaction="https://jsonplaceholder.typicode.com/posts">Забронировать</button>
-  
+
+        <div class="booking__button-block-date">
+          <button class="button" type="submit" formaction="https://jsonplaceholder.typicode.com/posts">Забронировать</button>
+        </div>
       </fieldset>
     </div>
-
     </form>
   </section>
-
 
     <section id="about-us" class="about">
       <div class="container">
@@ -300,14 +316,13 @@
 
           <div class="block">
             <div class="colomn">
-              <img src="image/Maks.jpg" alt="Фото мужчины-Никита Ященко" class="comments__block-img">
-              <figcaption class="comments__text comments-name">Макс Самойлов</figcaption>
+              <img src="image/Nikita.jpg" alt="Фото мужчины-Никита Ященко" class="comments__block-img">
+              <figcaption class="comments__text comments-name">Никита Ященко</figcaption>
             </div>
           <p class="comments__par comments__text">
-            Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса          </p>
+            Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
         </div>
       </figure>
-
       </div>
 
     </section>
@@ -402,6 +417,14 @@
         </li>
       </ul>
     </div>
+
+    <div class="block-adress__map">
+      <!-- <img src="image/map.jpg" alt="карта" width="680" height="274"> -->
+    </div>
+
+
+
+
   </div>
 </footer>
 </body>

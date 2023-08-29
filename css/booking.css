@@ -1,9 +1,8 @@
-.booking__block {
-    max-width: 1180px;
-}
-
-.form {
+.form__block {
     background-color: #440F51;
+    max-width: 1440px;
+    min-height: 1114px;
+    padding-top: 80px;
 }
 
 
@@ -101,17 +100,20 @@ fieldset {
     height: 52px;
 }
 
-
-
 .block-date {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
 }
 
 .booking__wrapper-block {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: end;
+    width: 300px;
+    row-gap: 36px;
+    column-gap: 32px;
     padding: 0;
 }
 
@@ -125,8 +127,8 @@ fieldset {
 
 .booking__wrapper-block-interval {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    row-gap: 14px;
     padding: 0;
 }
 
@@ -143,7 +145,20 @@ fieldset {
     height: 52px;
 }
 
+.booking__button-block-date {
+    display: flex;
+    justify-content: end;
+    max-width: 1080px;
+}
 
 .button {
-    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #6C0287;
 }

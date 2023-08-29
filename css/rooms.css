@@ -11,12 +11,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 1180px;
-    min-height: 710px;
 }
 
-.rooms__item:not(:last-child) {
-    margin-bottom: 60px;
+.rooms__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .rooms__item_image-vibes {
@@ -35,16 +35,21 @@
     background-image: url("../image/neon-sryle.jpg");
 }
 
+.room__items_size {
+    width: 580px;
+    height: 349px;
+}
+
 
 .rooms__link_text {
     position: absolute;
-    top: 275px;
-    left: 477px;
+    top: 94px;
+    left: 164px;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
     font-size: 70px;
     line-height: 80px;
-    width: 211px;
+    width: 252px;
     height: 160px;
 }
