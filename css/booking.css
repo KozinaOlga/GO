@@ -79,7 +79,17 @@
 input[type="radio"] {
     width: 27px;
     height: 27px;
+    outline-offset: 2px;
+    background: transparent;
+    outline: 1px solid transparent;
+    transition-duration: 0.3s, 0.2s;
+
 }
+
+input[type="radio"]:focus {
+    outline: 1px solid #CD06FF;
+}
+
 
 input[type="checkbox"] {
     width: 25px;
@@ -135,13 +145,15 @@ fieldset {
 .booking__input-number,
 .booking__input-phone,
 .booking__input-email {
-    width: 300px;
+    text-align: center ;
+    min-width: 300px;
     height: 52px;
 }
 
 .booking__input-name,
 .booking__input-surename {
-    width: 280px;
+    text-align: center ;
+    min-width: 280px;
     height: 52px;
 }
 
@@ -155,10 +167,49 @@ fieldset {
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
-    width: 300px;
+    min-width: 300px;
     height: 60px;
     border-radius: 10px;
     text-transform: uppercase;
     background-color: #fff;
     color: #6C0287;
+}
+
+.booking__button_pseudo:hover {
+    background-color: #EADEED;
+    border: 3px solid #640AA3;
+}
+
+.booking__button_pseudo:active {
+    background-color: #6C0287;
+    border: 3px solid #fff;
+}
+
+.booking__button_pseudo:focus {
+    background-color: #fff;
+    border: 3px solid #640AA3;
+}
+
+.button:hover {
+    background-color: #EADEED;
+    border: 3px solid #6C0287;
+}
+
+.button:active {
+    background-color: #EADEED;
+    border: none;
+}
+
+.button:focus {
+    background-color: #fff;
+    border: 3px solid #6C0287;
+}
+
+.booking__input-phone:focus {
+    background-color: #fff;
+    border: 2px solid #CD06FF;
+}
+
+input[type="tel"]:focus {
+    outline: none;
 }

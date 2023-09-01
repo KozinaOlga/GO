@@ -35,7 +35,7 @@
     background-image: url("../image/neon-sryle.jpg");
 }
 
-.room__items_size {
+.rooms__item_size {
     width: 580px;
     height: 349px;
 }

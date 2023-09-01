@@ -51,39 +51,38 @@
         <p class="banner__text">Новый формат игр и отдыха</p>
       </div>
 
-      <div class="banner-block__wrapper">
-        <div class="banner-block_column">
-          <p class="banner-block__text_color">4</p>
-          <p class="banner-block__text">Тематических зала</p>
+      <div class="banner-block-wrapper">
+        <div class="banner-block-column">
+          <p class="banner-block-column__text-color">4</p>
+          <p class="banner-block-column__text">Тематических зала</p>
         </div>
           
-        
-        <div class="banner-block_column-small">
-          <p class="banner-block__text_color-small">NEW</p>
-          <p class="banner-block__text">Новейшая аппаратура</p>
+        <div class="banner-block-column-small">
+          <p class="banner-block-column-small__text-color-small">NEW</p>
+          <p class="banner-block-column-small__text">Новейшая аппаратура</p>
         </div>
 
       </div>
 
-      <div class="batton__banner-block">
-        <button class="button__banner-color" type="submit">Забронировать</button>
+      <div class="button-banner-block">
+        <button class="button-banner-color" type="submit">Забронировать</button>
       </div>
 
-      <button class="button-down">
-        <a href="#">
-          <svg class="banner__svg" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="button-banner-down">
+        <a href="#relax">
+          <svg class="banner__svg" width="97" height="97" viewBox="0 0 97 97" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <circle cx="48.5" cy="48.5" r="48" stroke="white" />
-            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white" />
-            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white" />
+            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" />
+            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" />
         </svg>
         </a>
-      </button>
+      </div>
       </div>
   </section>
 
   <section class="relax">
     <div class="container">
-      <h2 class="relax__title">У нас есть все для классного отдыха с друзьями!</h2>
+      <h2 class="relax__title" id="relax">У нас есть все для классного отдыха с друзьями!</h2>
         <ul class="relax__list">
           <li class="relax__item relax__item_image-vr">
             <p class="relax__text">VR очки</p>
@@ -111,16 +110,16 @@
     <div class="container">
       <h2 class="rooms__title" id="rooms__title">Наши залы</h2>
       <ul class="rooms__list">
-        <li  class="rooms__item rooms__item_image-vibes room__items_size">
+        <li  class="rooms__item rooms__item_image-vibes rooms__item_size">
           <a class="rooms__link rooms__link_text" href="/rooms/vibes.html">80's vibes</a>
         </li>
-        <li class="rooms__item rooms__item_image-starwars room__items_size">
+        <li class="rooms__item rooms__item_image-starwars rooms__item_size">
           <a class="rooms__link rooms__link_text" href="/rooms/starwars.html">Star wars</a>
         </li>
-        <li class="rooms__item rooms__item_image-wildwest room__items_size">
+        <li class="rooms__item rooms__item_image-wildwest rooms__item_size">
           <a class="rooms__link rooms__link_text" href="/rooms/wildwest.html">Wild west</a>
         </li>
-        <li class="rooms__item rooms__item_image-neon room__items_size">
+        <li class="rooms__item rooms__item_image-neon rooms__item_size">
           <a class="rooms__link rooms__link_text" href="/rooms/neon.html">Neon style</a>
         </li>
       </ul>
@@ -137,7 +136,7 @@
 
         <h4 class="booking__title2">Выбери зал</h4>
           <div class="booking__choose-room">
-            <button class="booking__button">80's vibes</button>
+            <button class="booking__button booking__button_pseudo">80's vibes</button>
             <button class="booking__button">Star wars</button>
             <button class="booking__button">Wild west</button>
             <button class="booking__button">Neon style</button>
@@ -331,11 +330,21 @@
       <div class="container">
         <h2 class="faq__title">Частые вопросы</h2>
         <ul class="faq__list">
-          <li class="faq__item faq__item_color-purple">Можно ли забронировать комнату онлайн?</li>
-          <li class="faq__item faq__item_color-white">Могут ли мне вернуть деньги за бронь?</li>
-          <li class="faq__item faq__item_color-purple">Какая комната самая популярная?</li>
-          <li class="faq__item faq__item_color-white">Как я получить VIP карту?</li>
-          <li class="faq__item faq__item_color-purple">Какая камната самая популярная?</li>
+          <li class="faq__item faq__item_color-white">Можно ли забронировать комнату онлайн?
+            <button class="faq__item_btn-white"></button>
+          </li>
+          <li class="faq__item faq__item_color-purple">Могут ли мне вернуть деньги за бронь?
+            <button class="faq__item_btn-purple"></button>
+          </li>
+          <li class="faq__item faq__item_color-white">Какая комната самая популярная?
+            <button class="faq__item_btn-white"></button>
+          </li>
+          <li class="faq__item faq__item_color-purple">Как я получить VIP карту?
+            <button class="faq__item_btn-purple"></button>
+          </li>
+          <li class="faq__item faq__item_color-white">Какая камната самая популярная?
+            <button class="faq__item_btn-white"></button>
+          </li>
         </ul>
       </div>
     </section>
@@ -418,15 +427,21 @@
       </ul>
     </div>
 
-    <div class="block-adress__map">
+    <div class="block-adress-map">
       <!-- <img src="image/map.jpg" alt="карта" width="680" height="274"> -->
     </div>
-
-
-
-
   </div>
 </footer>
+
+<script>
+  document.addEventListener('click', event => {
+    if (event.target.matches('button')) {
+        event.target.focus()
+    }
+})
+</script>
 </body>
+
+
 </html>
 
