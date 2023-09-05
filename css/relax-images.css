@@ -51,3 +51,17 @@
     font-size: 20px;
     line-height: 28px;
 }
+
+.relax__item_image-transform {
+    transition-timing-function: linear;
+    transition-duration: 0.4s;
+}
+
+.relax__item_image-transform:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    cursor: pointer;
+}
+

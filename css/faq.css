@@ -23,14 +23,14 @@
     list-style-type: none;
 }
 
-.faq__item_btn-white:after,
-.faq__item_btn-purple:after {
+.faq__item-btn-white:after,
+.faq__item-btn-purple:after {
     content: "+";
     display: block;
     font-size: 28px;
 }
 
-.faq__item_btn-white {
+.faq__item-btn-white {
     position: relative;
     float: right;
     top: -10px;
@@ -43,7 +43,7 @@
     color: #440F51;
 }
 
-.faq__item_btn-purple {
+.faq__item-btn-purple {
     position: relative;
     float: right;
     top: -10px;
@@ -56,36 +56,36 @@
     color: #fff;
 }
 
-.faq__item_btn-white {
+.faq__item-btn-white {
     border-color: #440F51;
 }
 
 
-.faq__item_btn-purple {
+.faq__item-btn-purple {
     border-color: #fff;
 }
 
-.faq__item_btn-white:hover {
+.faq__item-btn-white:hover {
     background-color: #440F51;
     color: #fff;
 }
 
-.faq__item_btn-white:active:after,
-.faq__item_btn-purple:active:after {
+.faq__item-btn-white:active:after,
+.faq__item-btn-purple:active:after {
     content: "―";
 }
 
-.faq__item_btn-white:active {
+.faq__item-btn-white:active {
     background-color: transparent;
     color: #440F51;
 }
 
-.faq__item_btn-purple:hover {
+.faq__item-btn-purple:hover {
     background-color: #fff;
     color: #440F51;
 }
 
-.faq__item_btn-purple:active {
+.faq__item-btn-purple:active {
     background-color: transparent;
     color: #fff;
 }
