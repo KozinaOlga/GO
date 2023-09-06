@@ -89,3 +89,8 @@
     background-color: transparent;
     color: #fff;
 }
+
+.faq__item-hover-purple:hover {
+    background-color: #440F51;
+    color: #fff;
+}

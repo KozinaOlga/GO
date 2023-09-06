@@ -50,3 +50,9 @@
     background-color: #6C0287;
     border: none;
 }
+
+.navigation__item:hover {
+    transition-duration: 1s;
+    color: #CD06FF;
+    border-radius: 10%;
+}

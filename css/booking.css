@@ -27,11 +27,12 @@
 .booking__choose-room {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1180px;
     margin-bottom: 60px;
 }
 
-.booking__button {
+/* .booking__button {
     font-size: 30px;
     font-weight: 700;
     line-height: 40px;
@@ -41,7 +42,7 @@
     border-radius: 10px;
     width: 250px;
     height: 55px;
-}
+} */
 
 .booking__subtitle-legent{
     font-size: 24px;
@@ -76,6 +77,27 @@
     margin-bottom: 20px;
 }
 
+/*radio вместо button*/
+
+input[type="radio"].booking-radio {
+    display: none;
+}
+
+.booking-radio-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    height: 55px;
+}
+
+
 input[type="radio"] {
     width: 27px;
     height: 27px;
@@ -83,7 +105,6 @@ input[type="radio"] {
     background: transparent;
     outline: 1px solid transparent;
     transition-duration: 0.3s, 0.2s;
-
 }
 
 input[type="radio"]:focus {
@@ -175,17 +196,18 @@ fieldset {
     color: #6C0287;
 }
 
-.booking__button_pseudo:hover {
+
+.booking-radio-label:hover {
     background-color: #EADEED;
     border: 3px solid #640AA3;
 }
 
-.booking__button_pseudo:active {
+.booking-radio-label:active {
     background-color: #6C0287;
     border: 3px solid #fff;
 }
 
-.booking__button_pseudo:focus {
+.booking-radio-label:focus {
     background-color: #fff;
     border: 3px solid #640AA3;
 }

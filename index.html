@@ -135,11 +135,25 @@
         <h2 class="booking__title" id="booking__title">Забронировать зал просто</h2>
 
         <h4 class="booking__title2">Выбери зал</h4>
-          <div class="booking__choose-room">
-            <button class="booking__button booking__button_pseudo">80's vibes</button>
-            <button class="booking__button">Star wars</button>
-            <button class="booking__button">Wild west</button>
-            <button class="booking__button">Neon style</button>
+
+          <div class="container">
+            <fieldset class="booking__choose-room">
+              <label class="booking-radio-label">
+                <input type="radio" name="rooms" value="vibes" class="booking-radio">80's vibes
+              </label>
+      
+              <label class="booking-radio-label">
+                <input type="radio" name="rooms" value="star_wars" class="booking-radio">Star wars
+              </label>
+      
+              <label class="booking-radio-label">
+                <input type="radio" name="rooms" value="wild_west" class="booking-radio">Wild west
+              </label>
+      
+              <label class="booking-radio-label">
+                <input type="radio" name="rooms" value="neon_style" class="booking-radio">Neon style
+              </label>
+            </fieldset>
           </div>
 
           <fieldset class="booking">
@@ -330,7 +344,7 @@
       <div class="container">
         <h2 class="faq__title">Частые вопросы</h2>
         <ul class="faq__list">
-          <li class="faq__item faq__item_color-white">Можно ли забронировать комнату онлайн?
+          <li class="faq__item faq__item_color-white faq__item-hover-purple">Можно ли забронировать комнату онлайн?
             <button class="faq__item-btn-white"></button>
           </li>
           <li class="faq__item faq__item_color-purple">Могут ли мне вернуть деньги за бронь?
