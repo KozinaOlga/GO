@@ -13,6 +13,15 @@
     font-size: 24px;
 }
 
+.faq__item:hover .faq__item-btn-white {
+    background-color: #fff;
+}
+
+.faq__item:hover .faq__item-btn-purple {
+    background-color: #440F51;
+}
+
+
 .faq__item:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -60,14 +69,8 @@
     border-color: #440F51;
 }
 
-
 .faq__item-btn-purple {
     border-color: #fff;
-}
-
-.faq__item-btn-white:hover {
-    background-color: #440F51;
-    color: #fff;
 }
 
 .faq__item-btn-white:active:after,
@@ -93,4 +96,9 @@
 .faq__item-hover-purple:hover {
     background-color: #440F51;
     color: #fff;
+}
+
+.faq__item-hover-white:hover {
+    background-color: #fff;
+    color: #440F51;
 }

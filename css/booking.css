@@ -235,3 +235,29 @@ fieldset {
 input[type="tel"]:focus {
     outline: none;
 }
+
+.booking__input-email:focus,
+.booking__input-number:focus,
+.booking__input-name:focus,
+.booking__input-surename:focus {
+    background-color: #fff;
+    border: 2px solid #CD06FF;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.booking__time-size:focus,
+.booking__date-size:focus {
+    background-color: #fff;
+    border: 2px solid #CD06FF;
+}
+
+input[type="date"]:focus {
+    outline: none;
+}
+
+input[type="time"]:focus {
+    outline: none;
+}
