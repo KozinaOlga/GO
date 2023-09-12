@@ -20,18 +20,18 @@
     outline: 1px solid transparent;
     outline-offset: 3px;
     border-radius: 50%;
-    color: #fff;
+    color: var(--main-color);
     transition-property: color, outline-colot;
     transition-duration: 0.3s, 0.2s;
     transition-timing-function: ease-in-out;
 }
 
 .social__item-list:hover {
-    color: #cd06ff;
+    color: var(--light-purple-color);
 }
 
 .social__item-list:focus {
-    outline-color: #cd06ff;
+    outline-color: var(--light-purple-color);
 }
 
 .social__item-list:active {

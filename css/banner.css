@@ -38,7 +38,7 @@
     font-weight: 400;
     font-size: 28px;
     padding-left: 120px;
-    color: #fff;
+    color: var(--main-color);
     line-height: 50px;
 }
 
@@ -72,14 +72,14 @@
     font-size: 100px;
     font-weight: 900;
     line-height: 141.02px;
-    color: #CD06FF;
+    color: var(--light-purple-color);
 }
 
 .banner-block-column-small__text-color-small {
     font-size: 75px;
     font-weight: 900;
     line-height: 105.76px;
-    color: #CD06FF;
+    color: var(--light-purple-color);
 }
 
 .banner-block-column__text,
@@ -96,8 +96,8 @@
     line-height: 30px;
     border-radius: 10px;
     text-transform: uppercase;
-    background-color: #6C0287;
-    color: #fff;
+    background-color: var(--dark-purple-color);
+    color: var(--main-color);
     width: 374px;
     height: 80px;
 }
@@ -140,11 +140,11 @@
 }
 
 .banner__svg rect {
-    fill: #fff;
+    fill: var(--main-color);
 }
 
 .banner__svg:hover {
-    fill: #fff;
+    fill: var(--main-color);
     transition: all 0.4s linear;
 }
 
@@ -161,7 +161,7 @@
 
 .banner__svg:active rect {
     fill-opacity: 1;
-    fill: #fff;
+    fill: var(--main-color);
     stroke-opacity: 0;
 }
 

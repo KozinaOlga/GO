@@ -1,3 +1,7 @@
+.relax {
+    min-height: 708px;
+}
+
 .relax__title {
     text-align: center;
     font-size: 40px;
@@ -9,7 +13,9 @@
 .relax__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 20px;
+    row-gap: 40px;
+    column-gap: 20px;
+    min-height: 566px;
 }
 
 .relax__item {
@@ -17,6 +23,7 @@
     display: block;
     width: 380px;
     height: 228px;
+    overflow: hidden;
 }
 
 .relax__item_image-vr {
@@ -24,6 +31,8 @@
 }
 
 .relax__item_image-audio {
+    position: relative;
+    top: 60px;
     background-image: url(../img/audio.jpg);
 }
 
@@ -36,6 +45,8 @@
 }
 
 .relax__item_image-netflix {
+    position: relative;
+    top: 60px;
     background-image: url(../img/netflix.jpg);
 }
 
@@ -44,12 +55,13 @@
 }
 
 .relax__text {
-    position: absolute;
+    position: relative;
     top: 166px;
     left: 40px;
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+    width: 300px;
 }
 
 .relax__item_image-transform {
