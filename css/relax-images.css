@@ -5,7 +5,7 @@
 .relax__title {
     text-align: center;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: var(--main-weight);
     line-height: 50px;
     margin-bottom: 41px;
 }
@@ -58,7 +58,7 @@
     position: relative;
     top: 166px;
     left: 40px;
-    font-weight: 700;
+    font-weight: var(--main-weight);
     font-size: 20px;
     line-height: 28px;
     width: 300px;

@@ -1,0 +1,50 @@
+.other-room__link-vibes {
+    top: 50%;
+    left: 10%;
+}
+
+.other-room__link-wildwest-star {
+    top: 50%;
+    left: 45%;
+}
+
+.other-room__link-starwars-wildwest {
+    top: 50%;
+    left: 10%;
+}
+
+.other-room__link-neon-wildwest {
+    top: 50%;
+    left: 44%;
+}
+
+.other-room__link-vibes-wildwest {
+    top: 50%;
+    left: 77%;
+}
+
+.other-room__link-starwars-neon {
+    top: 50%;
+    left: 77%;
+}
+
+@media (max-width: 320px) {
+    .other-room__link-vibes,
+    .other-room__link-starwars-wildwest {
+        top: 20%;
+        left: 40%;
+    }
+
+    .other-room__link-wildwest-star,
+    .other-room__link-neon-wildwest {
+        top: 50%;
+        left: 40%;
+    }
+
+    .other-room__link-neon,
+    .other-room__link-vibes-wildwest,
+    .other-room__link-starwars-neon {
+        top: 80%;
+        left: 40%;
+    }
+}

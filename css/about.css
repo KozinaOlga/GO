@@ -12,7 +12,7 @@
 .about__title {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: var(--main-weight);
     font-size: 40px;
     margin-bottom: 40px;
 }

@@ -1,6 +1,6 @@
+
 .social__link {
     list-style-type: none;
-    padding: 0 0 51px 0;
 }
 
 .social__item {
@@ -38,7 +38,29 @@
     color: #840aa3;
 }
 
-social:not(:last-child) {
+.social:not(:last-child) {
     margin-right: 20px;
 }
 
+@media (max-width: 1024px) {
+    .social__item-list {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .social {
+        margin-bottom: 35px;
+    }
+
+    .social__item-list {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social__item:not(:last-child) {
+        margin-right: 20px;
+    
+}
+}

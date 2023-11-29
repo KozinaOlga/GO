@@ -1,5 +1,5 @@
 .faq__title {
-    font-weight: 700;
+    font-weight: var(--main-weight);
     font-size: 40px;
     text-align: center;
     margin-bottom: 40px;
@@ -9,7 +9,7 @@
     background-color: var(--main-color);
     color: #1C1C1C;
     padding: 30px 70px;
-    font-weight: 700;
+    font-weight: var(--main-weight);
     font-size: 24px;
 }
 

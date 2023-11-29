@@ -1,6 +1,6 @@
 .rooms__title {
     text-align: center;
-    font-weight: 700;
+    font-weight: var(--main-weight);
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 60px;
@@ -47,7 +47,7 @@
     left: 164px;
     color: var(--main-color);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: var(--main-weight);
     font-size: 70px;
     line-height: 80px;
     width: 252px;

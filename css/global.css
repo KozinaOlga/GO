@@ -10,8 +10,8 @@ html {
 }
 
 .container {
-    max-width: 1440px;
-    padding: 0; /*должен быть 0 130px отстут слева, картинки уходят в право, поэтому пока отступ убран*/
+    max-width: 1700px;
+    padding: 0 130px;
     margin: 0 auto;
 }
 
@@ -69,4 +69,37 @@ fieldset {
 
 section {
     padding: 50px 0;
+}
+
+@media all and (max-width:1024px) {
+    .container {
+        max-width: 1144px;
+        padding: 0 60px;
+    }
+
+    section {
+        padding: 35px 0;
+    }
+}
+
+@media all and (max-width:768px) {
+    .container {
+        max-width: 848px;
+        padding: 0 40px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+}
+
+@media all and (max-width:420px) {
+    .container {
+        max-width: 440px;
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 15px 0;
+    }
 }

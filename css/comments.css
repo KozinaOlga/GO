@@ -1,6 +1,6 @@
 .comments__title {
     text-align: center;
-    font-weight: 700;
+    font-weight: var(--main-weight);
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 40px;
