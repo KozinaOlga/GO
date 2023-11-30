@@ -1,14 +1,19 @@
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 823px;
+    border: 1px solid green;
+}
+
 .banner {
     position: relative;
-    min-height: 970px;
-    padding: 0 0 50px 0;
 }
 
 .banner:before {
     position: absolute;
     content: "";
-    top: 110px;
-    left: 480px;
+    top: 10%;
+    left: 45%;
     width: 675px;
     min-height: 762px;
     background-image: url("../image/gameoverVRman.png");
@@ -17,23 +22,14 @@
 }
 
 .banner__title {
-    /* position: absolute;
-    top: 96px; */
     font-weight: 900;
     font-size: 150px;
+    line-height: 150px;
     text-transform: uppercase;
-    width: 883px;
-    height: 150px;
-    letter-spacing: -15px;
 }
 
 .banner__text {
-    /* position: absolute;
-    top: 246px;
-    left: 100px; */
-    font-weight: 400;
     font-size: 28px;
-    padding-left: 120px;
     color: var(--main-color);
     line-height: 50px;
 }
@@ -67,21 +63,21 @@
 .banner-block-column__text-color {
     font-size: 100px;
     font-weight: 900;
-    line-height: 141.02px;
+    line-height: 141px;
     color: var(--light-purple-color);
 }
 
 .banner-block-column-small__text-color-small {
     font-size: 75px;
     font-weight: 900;
-    line-height: 105.76px;
+    line-height: 106px;
     color: var(--light-purple-color);
 }
 
 .banner-block-column__text,
 .banner-block-column-small__text {
     font-size: 30px;
-    line-height: 34.5px;
+    line-height: 35px;
 }
 
 .button-banner-color {
@@ -94,15 +90,12 @@
     text-transform: uppercase;
     background-color: var(--dark-purple-color);
     color: var(--main-color);
-    width: 374px;
-    height: 80px;
+    padding: 17px 48px;
 }
 
 .button-banner-down {
-    display: block;
-    position: relative;
-    top: 60px;
-    left: 530px;
+    display: flex;
+    justify-content: center;
     z-index: 1;
     background-color: transparent;
     border: none;
@@ -165,4 +158,78 @@
     outline: 1px solid #840AA3;
 }
 
+@media (max-width: 1024px) {
+    .banner-container {
+        min-height: 583px;
+    }
 
+    .banner:before {
+        width: 453px;
+        min-height: 520px;
+    }
+
+    .banner__title {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    
+    .banner__text {
+        font-size: 22px;
+        line-height: 30px;
+    } 
+
+    .banner-block-column__text-color {
+        font-size: 80px;
+        list-style: 113px;
+    }
+
+    .banner-block-column__text {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .banner-block-column-small__text-color-small {
+        font-size: 60px;
+        line-height: 85px;
+    }
+
+    .banner-block-column-small__text {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .button-banner-color { 
+        font-size: 22px;
+    }
+
+    
+.banner__svg {
+    width: 67px;
+    height: 67px;
+
+}
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .banner:before {
+        width: 409px;
+        min-height: 479px;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .banner:before {
+        width: 161px;
+        min-height: 179px;
+    }
+    
+}

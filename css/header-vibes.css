@@ -162,14 +162,14 @@
         display: none;
     }
 
-    .header__menu {
+    .header__menu-rgid {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         align-self: center;
         width: 39px;
     }
 
-    .header__logo {
+    .header__logo-grid {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
         max-width: 66px;
@@ -186,11 +186,6 @@
 
 
 @media (max-width: 320px) {
-
-    .header {
-        padding-top: 20px;
-        padding-bottom: 0;
-    }  
 
     .container__header-vibes-grid {
         margin-bottom: 20px;

@@ -1,5 +1,7 @@
-@import "../css/var.css";
 @import "../css/global.css";
+@import "../css/normalize.css";
+@import "../css/header.css";
+@import "../css/var.css";
 @import "../css/faq.css";
 @import "../css/rooms.css";
 @import "../css/booking.css";
@@ -8,8 +10,6 @@
 @import "../css/footer/contacts.css";
 @import "../css/footer/social.css";
 @import "../css/banner.css";
-@import "../css/normalize.css";
-@import "../css/header.css";
 @import "../css/relax-images.css";
 @import "../css/header-vibes.css";
 @import "../css/picture-banner.css";

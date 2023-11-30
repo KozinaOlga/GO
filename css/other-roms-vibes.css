@@ -4,8 +4,6 @@
     position: relative;
 }
 
- 
-
 .other-room__list {
     display: grid;
     column-gap: 20px;

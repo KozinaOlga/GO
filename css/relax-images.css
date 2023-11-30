@@ -11,65 +11,69 @@
 }
 
 .relax__list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 20px;
-    min-height: 566px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr fit-content(228px);
+    gap: 40px 20px;
 }
 
 .relax__item {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    display: block;
-    width: 380px;
-    height: 228px;
     overflow: hidden;
+    transition-timing-function: linear;
+    transition-duration: 0.4s;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.relax__item_image-vr {
-    background-image: url(../img/vr.jpg);
+.relax__item-image-vr {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .relax__item_image-audio {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     position: relative;
     top: 60px;
-    background-image: url(../img/audio.jpg);
 }
 
 .relax__item_image-micro {
-    background-image: url(../img/micro.jpg);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
 }
 
 .relax__item_image-game {
-    background-image: url(../img/game.jpg);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 .relax__item_image-netflix {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     position: relative;
     top: 60px;
-    background-image: url(../img/netflix.jpg);
 }
 
 .relax__item_image-sony {
-    background-image: url(../img/sony.jpg);
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
 }
 
 .relax__text {
     position: relative;
-    top: 166px;
-    left: 40px;
+    bottom: 30%;
+    align-self: start;
+    padding: 0 0 0 40px;
     font-weight: var(--main-weight);
     font-size: 20px;
     line-height: 28px;
-    width: 300px;
 }
 
-.relax__item_image-transform {
-    transition-timing-function: linear;
-    transition-duration: 0.4s;
-}
 
-.relax__item_image-transform:hover {
+.relax__item:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -77,3 +81,24 @@
     cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+    .relax__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .relax__item {
+        width: 287px;
+        height: 172px;
+    }
+
+    .relax__list {
+        gap: 10px;
+    }
+
+    .relax__text {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 0 0 0 30px;
+}
+}

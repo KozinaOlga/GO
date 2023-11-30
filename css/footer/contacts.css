@@ -100,10 +100,8 @@
 @media (max-width: 1024px) {
     .contacts {
         align-items: center;
-    }
-
-    .contacts {
         justify-content: space-between;
+        margin-bottom: 92px;
     }
 
     .address__item_contact-phone {
@@ -112,10 +110,6 @@
 
     .address {
         margin-bottom: 30px;
-    }
-
-    .contacts {
-        margin-bottom: 92px;
     }
 }
 
