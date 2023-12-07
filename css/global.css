@@ -15,6 +15,7 @@ html {
     margin: 0 auto;
 }
 
+
 .body {
     min-width: 320px;
     min-height: 100vh;
@@ -79,6 +80,7 @@ section {
     .container {
         max-width: 1144px;
         padding: 0 60px;
+        border: 2px solid goldenrod
     }
 
     section {

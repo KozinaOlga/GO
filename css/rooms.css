@@ -14,42 +14,116 @@
 }
 
 .rooms__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
 }
 
 .rooms__item_image-vibes {
-    background-image: url("../image/vibes.jpg");
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .rooms__item_image-starwars {
-    background-image: url("../image/starwars.jpg");
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .rooms__item_image-wildwest {
-    background-image: url("../image/wildwest.jpg");
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 .rooms__item_image-neon {
-    background-image: url("../image/neon-sryle.jpg");
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
-
-.rooms__item_size {
-    width: 580px;
-    height: 349px;
-}
-
 
 .rooms__link_text {
     position: absolute;
-    top: 94px;
-    left: 164px;
+    top: 30%;
+    left: 30%;
     color: var(--main-color);
     text-decoration: none;
     font-weight: var(--main-weight);
     font-size: 70px;
     line-height: 80px;
-    width: 252px;
-    height: 160px;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 252px;
+}
+
+@media (max-width: 1024px) {
+    
+    .rooms__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 37px;
+    }
+    
+    .rooms__link_text {
+        font-size: 60px;
+        line-height: 60px; 
+        top: 20%;
+        left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .rooms__title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 35px;
+    }
+    
+    .rooms__link_text {
+        font-size: 40px;
+        line-height: 50px; 
+        left: 25%;
+        max-width: 116px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .rooms__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    .rooms__item_image-vibes {
+        grid-column: 1 / 2;
+        grid-row: unset;
+    }
+    
+    .rooms__item_image-starwars {
+        grid-column: 1 / 2;
+        grid-row: unset;
+    }
+    
+    .rooms__item_image-wildwest {
+        grid-column: 1 / 2;
+        grid-row: unset;
+    }
+    
+    .rooms__item_image-neon {
+        grid-column: 1 / 2;
+        grid-row: unset;
+    }
+    
+    .rooms__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .rooms__link_text {
+        font-size: 26px;
+        line-height: 34px; 
+    }
 }

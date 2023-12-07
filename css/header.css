@@ -57,7 +57,7 @@
     border-radius: 10%;
 }
 
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (max-width: 1024px) {
 
     .header__logo {
         max-width: 87px;
@@ -75,7 +75,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 768px) {
 
     .navigation__list {
         display: none;
@@ -106,14 +106,30 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 320px) {
+
+    .container__header {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: auto;
+        align-items: center;
+        border: 1px solid red;
+    }
 
     .btn {
-        display: none; /*не работает*/
+        display: none;
     }
 
     .header__logo {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
         max-width: 66px;
+    }
+
+    .header__menu {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        max-width: 39px;
     }
 }
 

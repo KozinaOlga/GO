@@ -1,19 +1,21 @@
-.relax {
+/* .relax {
     min-height: 708px;
-}
+} */
 
 .relax__title {
     text-align: center;
     font-size: 40px;
     font-weight: var(--main-weight);
     line-height: 50px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 .relax__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr fit-content(228px);
+    /* grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); */
+    grid-template-rows: 1fr fit-content(280px);
     gap: 40px 20px;
 }
 
@@ -65,13 +67,11 @@
 .relax__text {
     position: relative;
     bottom: 30%;
-    align-self: start;
-    padding: 0 0 0 40px;
+    padding-left: 40px;
     font-weight: var(--main-weight);
     font-size: 20px;
     line-height: 28px;
 }
-
 
 .relax__item:hover {
     transform: scale(1.1);
@@ -82,9 +82,17 @@
 }
 
 @media (max-width: 1024px) {
+
+    .relax__list {
+        max-width: 425px;
+        gap: 30px 22px;
+        /* margin: 0 auto; */
+    }
+
     .relax__title {
         font-size: 30px;
         line-height: 40px;
+        margin-bottom: 36px; 
     }
 
     .relax__item {
@@ -92,13 +100,93 @@
         height: 172px;
     }
 
-    .relax__list {
-        gap: 10px;
-    }
-
     .relax__text {
         font-size: 20px;
         line-height: 28px;
-        padding: 0 0 0 30px;
+        padding-left: 30px;
+    }
+
+    .relax__text_audio {
+        bottom: 40%;
+    }
+
+    .relax__text-netflix {
+        bottom: 50%;
+    }
 }
+
+@media (max-width: 768px) {
+    .relax__title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .relax__list {
+        gap: 20px;
+    }
+
+    .relax__item-image-vr {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .relax__item_image-audio {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        top: 0;
+    }
+    
+    .relax__item_image-micro {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .relax__item_image-game {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .relax__item_image-netflix {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        top: 0;
+    }
+    
+    .relax__item_image-sony {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .relax__list {
+        display: grid;
+        grid-template-columns: 135px 135px;
+        grid-template-rows: 75px 75px 75px;
+        gap: 10px;
+    }
+
+    .relax__list-img {
+        max-width: 135px;
+    }
+
+    .relax__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .relax__text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .relax__text {
+        bottom: 30%;
+        padding-left: 10px;
+        max-width: 115px;
+    }
 }

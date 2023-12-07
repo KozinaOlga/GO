@@ -1,61 +1,45 @@
-.form__block {
-    background-color: #440F51;
-    max-width: 1440px;
-    min-height: 1114px;
-    padding-top: 80px;
+.container.form__block {
+    padding: 0; /*как убрать с этого блока padding*/
 }
 
+.container {
+    border: 1px solid red;
+}
+
+.form__block {
+    background-color: #440F51;
+    padding: 80px 0 80px 0;
+}
 
 .booking__title {
     text-align: center;
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-    max-width: 1180px;
     margin-bottom: 40px;
 }
 
-.booking__title2 {
+.booking__title-small {
     font-size: 24px;
     line-height: 28px;
     font-weight: var(--main-weight);
     text-align: center;
-    max-width: 1180px;
     margin-bottom: 40px;
 }
 
 .booking__choose-room {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1180px;
     margin-bottom: 60px;
 }
-
-/* .booking__button {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
-    color: #000000;
-    background-color: #fff;
-    border-radius: 10px;
-    width: 250px;
-    height: 55px;
-} */
 
 .booking__subtitle-legent{
     font-size: 24px;
     line-height: 28px;
     font-weight: var(--main-weight);
     text-align: center;
-    margin-bottom: 40px;
-}
-
-.booking__subtitle-legent_margin {
     margin-bottom: 23px;
 }
-
 
 .booking__block {
     display: flex;
@@ -70,33 +54,25 @@
 
 .booking__label {
     display: flex;
-    gap: 20px 20px;
+    gap: 20px;
+    font-size: 22px;
+    line-height: 25px;
 }
 
 .booking__label:not(:last-child) {
     margin-bottom: 20px;
 }
 
-/*radio вместо button*/
-
-input[type="radio"].booking-radio {
-    display: none;
-}
-
 .booking-radio-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 30px;
-    font-weight: var(--main-weight);
     line-height: 40px;
+    font-weight: var(--main-weight);
     color: #000000;
     background-color: var(--main-color);
     border-radius: 10px;
-    width: 250px;
-    height: 55px;
+    padding: 7px 30px;
+    text-transform: uppercase;
 }
-
 
 input[type="radio"] {
     width: 27px;
@@ -111,7 +87,6 @@ input[type="radio"]:focus {
     outline: 1px solid var(--light-purple-color);
 }
 
-
 input[type="checkbox"] {
     width: 25px;
     height: 25px;
@@ -123,18 +98,24 @@ input[type="checkbox"] {
 
 fieldset {
     border: none;
+    padding: 0;
 }
 
-.booking__date-size,
-.booking__time-size {
+input[type="date"],
+input[type="time"] {
     width: 134px;
+    height: 52px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 300px;
     height: 52px;
 }
 
 .block-date {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
@@ -142,10 +123,11 @@ fieldset {
     display: flex;
     flex-wrap: wrap;
     align-items: end;
-    width: 300px;
+    max-width: 300px;
     row-gap: 36px;
     column-gap: 32px;
     padding: 0;
+    padding-top: 15px;
 }
 
 .booking__wrapper-name,
@@ -154,48 +136,39 @@ fieldset {
 .booking__wrapper-email {
     display: flex;
     flex-direction: column;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .booking__wrapper-block-interval {
     display: flex;
     flex-direction: column;
     row-gap: 14px;
-    padding: 0;
 }
 
 .booking__input-number,
 .booking__input-phone,
-.booking__input-email {
-    text-align: center ;
-    min-width: 300px;
-    height: 52px;
-}
-
+.booking__input-email,
 .booking__input-name,
-.booking__input-surename {
+.booking__input-surename  {
     text-align: center ;
-    min-width: 280px;
-    height: 52px;
 }
 
 .booking__button-block-date {
     display: flex;
     justify-content: end;
-    max-width: 1080px;
 }
 
 .button {
     font-size: 22px;
     font-weight: var(--main-weight);
     line-height: 28px;
-    min-width: 300px;
-    height: 60px;
     border-radius: 10px;
     text-transform: uppercase;
     background-color: var(--main-color);
     color: var(--dark-purple-color);
+    padding: 16px 50px;
 }
-
 
 .booking-radio-label:hover {
     background-color: #EADEED;
@@ -261,3 +234,221 @@ input[type="date"]:focus {
 input[type="time"]:focus {
     outline: none;
 }
+
+@media (max-width: 1400px) {
+    .form__block {
+        padding: 60px 0 60px 0;
+    }
+
+    .booking__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .booking-radio-label {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 7px 15px;
+    }
+}
+
+    @media (max-width: 1024px) {
+
+    input[type="text"] {
+        width: 251px;
+    }
+
+    input[type="tel"] {
+        width: 254px;
+    }
+
+    input[type="text"].booking__input-number {
+        width: 300px;
+    }
+
+    .button {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 13px 45px;
+    } 
+}
+
+@media (max-width: 768px) {
+    .form__block {
+        padding: 50px 0 50px 0;
+    }
+
+    .booking__title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 40px;
+    }
+
+    .booking-radio-label {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 9px 20px;
+    }
+
+    .booking__subtitle-legent {
+        margin-bottom: 24px;
+    }
+
+    .booking__choose-room {
+        margin-bottom: 50px;
+    }
+
+    .booking__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-date {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .booking__wrapper-block {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 10px;
+    }
+
+    .booking__wrapper-block-interval-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input[type="text"].booking__input-name,
+    input[type="tel"].booking__input-phone {
+        width: 280px;
+    }
+
+    input[type="text"].booking__input-surename,
+    input[type="text"].booking__input-email {
+        width: 300px;
+    } 
+
+    .booking__Label-time {
+        margin-right: 95px;
+    }
+
+    .button {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 16px 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .booking__title {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 13px;
+    }
+
+    .booking-radio-label {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 6px 20px;
+    }
+
+    .booking__title-small {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .booking__choose-room {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        gap: 20px 14px;
+    }
+
+    .booking__choose-room-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .booking__wrapper-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 12px;
+    }
+
+    .booking__wrapper-block-interval {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .booking__wrapper-block-interval:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    .booking__subtitle-legent{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .booking__different-games {
+        margin-bottom: 25px;
+    }
+
+    .booking__label {
+        gap: 15px;
+        font-size: 16px;
+        line-height: 18px;
+        min-height: 30px;
+        align-items: center;
+    }
+
+    .booking__label:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .booking__block {
+        margin-bottom: 30px;
+    }
+
+    .booking__subtitle-legent{
+        margin-bottom: 25px;
+    }
+
+    input[type="text"].booking__input-surename,
+    input[type="text"].booking__input-email,
+    input[type="text"].booking__input-number {
+        width: 280px;
+    }
+
+    .booking__input-number {
+        text-align: start ;
+    }
+
+    .booking__button-block-date {
+        justify-content: center;
+    }
+
+    .button {
+        line-height: 26px;
+        padding: 17px 38px;
+    } 
+
+    .block-date {
+        margin-bottom: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
