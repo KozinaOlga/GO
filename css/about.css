@@ -1,14 +1,50 @@
 
-.block-about {
-    display: flex;
-}
-
-.container__about-text {
+/* .block-about {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-end;
+    border: 1px solid green;
+} */
+
+
+.block-about {
+    display: grid;
+    grid-template-columns: 600px minmax(min-content, max-content);
+    grid-template-rows: repeat(4, min-content);
+    gap: 40px 80px;
 }
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.three {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.four {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.five {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.block-about__img {
+    /* align-self: flex-start; */
+    border: 1px solid red;
+}
+
+
 
 .about__title {
     text-align: center;
@@ -19,16 +55,11 @@
     margin-bottom: 40px;
 }
 
-.block-about__img {
-    margin-right: 80px;
-}
-
 .container__about-text-par {
     font-style: normal;
     font-size: 20px;
     line-height: 28px;
     color: var(--main-color);
-    margin-bottom: 40px;
 }
 
 .about__pseudo-element {
@@ -59,33 +90,46 @@
     transform: rotate(180deg);
 }
 
+.blockquote {
+    margin: 0;
+}
+
 .blockquote__img-text {
     display: flex;
-    max-width: 389px;
+    justify-content: end;
+    border: 1px solid yellow;
 }
+
 
 .figure__photo-author {
     width: 70px;
     height: 70px;
-
 }
 
 .title-author {
     padding-left: 30px;
     font-size: 20px;
     line-height: 28px;
+    width: 300px;
 }
 
 @media (max-width: 1024px) {
+
+    .block-about {
+        grid-template-columns: 420px minmax(min-content, max-content);
+        gap: 20px 40px;
+    }
+
     .about__title {
         font-size: 30px;
         line-height: 40px;
+        margin-bottom: 26px;  
     }
 
     .container__about-text-par {
         font-size: 18px;
         line-height: 24px;
-        margin-bottom: 35px;
+        /* margin-bottom: 35px; */
     }
 
     .title-author {
@@ -98,50 +142,128 @@
         line-height: 36px;
     }
 
-    .block-about__img {
-        margin-right: 39px;
-    }
-
     .about__pseudo-element:after,
     .about__pseudo-element:before {
         width: 15px;
         height: 36px;
     }
-
-    .block-about__img {
-        max-width: 420px;
-    }
 }
 
 @media (max-width: 768px) {
+
+    .block-about {
+        grid-template-columns: 382px 1fr;
+        grid-template-rows: repeat(4, min-content);
+        gap: 30px 28px;
+    }
+
+    .one {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+    
+    .two {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+    }
+
+    .three {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: center;
+    }
+    
+    .four {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .five {
+        grid-column: 2 / 3; /*не работает, не пойму почему*/
+        grid-row: 4 / 5;
+    }
+
     .about__title {
         font-size: 24px;
         line-height: 36px;
-    }
-
-    .block-about__img {
-        max-width: 382px;
-        height: 380px;
+        margin-bottom: 30px; 
     }
 
     .container__about-text-par {
         font-size: 16px;
         line-height: 22px;
-        margin-bottom: 35px;
     }
 
-
-
-
-
-
     .about__pseudo-element {
-
         font-size: 32px;
     }
 
+        /* .blockquote {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        border: 1px solid violet;
+    } */
+}
 
+@media all and (max-width: 320px) {
+    .block-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, min-content);
+        gap: 15px;
+    }
 
+    .one {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .two {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
 
+    .three {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .four {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        width: 265px;
+    }
 
+    .five {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .about__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px; 
+    }
+
+    .container__about-text-par {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .title-author {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__pseudo-element {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .about__pseudo-element:after,
+    .about__pseudo-element:before {
+        width: 16px;
+        height: 26px;
+    }
 }
