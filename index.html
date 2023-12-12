@@ -167,12 +167,11 @@
               </fieldset>
   
             <fieldset class="booking">
-              <legend class="booking__subtitle-legent">Собери набор развлечений</legend>
+              <legend class="booking__subtitle-legent-title">Собери набор развлечений</legend>
                   
               <div class="booking__block">
-  
-                <fieldset class="booking">
-                    <legend class="booking__different-games booking__subtitle-legent">Приставка</legend>
+                <fieldset class="booking booking-fieldset-console">
+                    <legend class="booking__subtitle-legent">Приставка</legend>
                       <label class="booking__label">
                       <input type="radio" name="play" value="play_station" class="booking__input">Play station
                     </label>
@@ -190,8 +189,8 @@
                     </label>
                 </fieldset>
     
-                <fieldset class="booking">
-                    <legend class="booking__different-games booking__subtitle-legent">Настольные игры</legend>
+                <fieldset class="booking booking-fieldset-table-games">
+                    <legend class="booking__subtitle-legent">Настольные игры</legend>
                     <label class="booking__label">
                       <input type="checkbox" name="board_games" value="jenga" class="booking__input">Jenga
                     </label>
@@ -209,8 +208,8 @@
                     </label>
                 </fieldset>
     
-                <fieldset class="booking">
-                    <legend class="booking__different-games booking__subtitle-legent">Дополнительно</legend>
+                <fieldset class="booking booking-fieldset-karaoke">
+                    <legend class="booking__subtitle-legent">Дополнительно</legend>
                     <label class="booking__label">
                       <input type="checkbox" name="add" value="karaoke" class="booking__input">Караоке
                     </label>
@@ -219,22 +218,21 @@
                       <input type="checkbox" name="add" value="vr" class="booking__input">VR
                     </label>
                 </fieldset>
-  
               </div>
   
             </fieldset>
     
             <fieldset class="booking">
-              <legend class="booking__subtitle-legent">Выбери дату и время</legend>
+              <legend class="booking__subtitle-legent-title">Выбери дату и время</legend>
               <div class="block-date">
     
                 <fieldset  class="booking__wrapper-block">
-                  <label for="date" lass="booking__Label-date">
+                  <label for="date" class="booking__label-date">
                     <input type="date" name="date" id="date" required class="booking__date-size">
                   </label>
           
-                  <label for="time" class="booking__Label-time">
-                    <input type="time" name="time" id="time" required class="booking__date-size">
+                  <label for="time" class="booking__label-time">
+                    <input type="time" name="time" id="time" required class="booking__date-size booking__date-size-time">
                   </label>
     
                   <label class="booking__wrapper-number">
@@ -286,9 +284,9 @@
 
 
 
-            <blockquote class="blockquote">
-              <figure class="blockquote__img-text five">
-                <img src="image/creator.png" alt="Фото мужчины, Аркадий Абакшин" class="figure__photo-author">
+            <blockquote class="blockquote five">
+              <figure class="blockquote__img-text">
+                <img src="image/creator.png" alt="Фото мужчины, Аркадий Абакшин" class="figure-photo-author">
                 <cite class="title-author">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
               </figure>
             </blockquote>
@@ -456,16 +454,15 @@
             </div>
     </div>
 
-    <div class="contacts__copyright">
-      <div class="contacts__gameover">
-          <p class="contacts__gameover-text">© Game Over, 2023</p>
+    <div class="contacts-copyright">
+      <div class="contacts-gameover">
+          <p class="contacts-gameover__text">© Game Over, 2023</p>
       </div>
-      <div class="contacts__develop">
-          <p class="contacts__develop-text">Design by Anastasia Ilina</p>
-          <p class="contacts__develop-text">Develop: Olga Kozina</p>
+      <div class="contacts-develop">
+          <p class="contacts-develop__text">Design by Anastasia Ilina</p>
+          <p class="contacts-develop__text">Develop: Olga Kozina</p>
       </div>
   </div>
-
   </div>
 </footer>
 
@@ -477,7 +474,5 @@
 })
 </script>
 </body>
-
-
 </html>
 

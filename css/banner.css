@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     min-height: 823px;
-    border: 1px solid green;
 }
 
 .banner {
@@ -13,7 +12,7 @@
     position: absolute;
     content: "";
     top: 10%;
-    left: 45%;
+    left: 40%;
     width: 675px;
     min-height: 762px;
     background-image: url("../image/gameoverVRman.png");
@@ -161,10 +160,48 @@
     outline: 1px solid #840AA3;
 }
 
-@media (max-width: 1024px) {
-    .banner-container {
-        min-height: 583px;
+@media (max-width: 1370px) {
+    .banner:before {
+        width: 625px;
+        min-height: 762px;
     }
+}
+
+@media (max-width: 1290px) {
+    .banner:before {
+        top: 17%;
+        left: 35%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .banner__title {
+        font-size: 130px;
+        line-height: 130px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .banner:before {
+        left: 33%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .banner:before {
+        width: 580px;
+        left: 35%;
+    }
+}
+
+@media (max-width: 1120px) {
+    .banner:before {
+        left: 30%;
+    }
+}
+
+
+@media (max-width: 1024px) {
 
     .banner-block-text {
         margin-bottom: 58px;

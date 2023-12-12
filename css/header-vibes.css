@@ -86,7 +86,7 @@
         margin-bottom: 50px;
     }
 
-    .navigation__link {
+    .navigation__link-heder {
         font-size: 20px;
         line-height: 20px;
     }
@@ -102,7 +102,7 @@
         max-width: 87px;
     }
 
-    .navigation__link {
+    .navigation__link-header {
         line-height: 22px;
         font-size: 18px;
     }

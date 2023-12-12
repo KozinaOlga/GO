@@ -73,20 +73,18 @@
 
 .contacts {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 145px;
 }
 
-.contacts__copyright {
+.contacts-copyright {
     display: flex;
     justify-content: space-between;
-    max-width: 1180px;
-    margin: 0 auto;
 }
 
-.contacts__gameover-text,
-.contacts__develop-text {
+.contacts-gameover-text,
+.contacts-develop-text {
     font-size: 14px;
     line-height: 16px;
 }
@@ -122,7 +120,7 @@
 
     .address-social {
         align-items: center;
-        width: 100%;
+        margin-bottom: 30px;
     }
 
     .contacts {
@@ -179,5 +177,21 @@
 
     .contacts {
         margin-bottom: 63px;
+    }
+
+    .contacts-copyright {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contacts-gameover,
+    .contacts-develop {
+        align-self: center;
+    }
+
+    .contacts-gameover__text,
+    .contacts-develop__text {
+        font-size: 12px;
+        align-items: center;
     }
 }
