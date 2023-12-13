@@ -22,7 +22,8 @@
     gap: 40px;
 }
 
-.navigation__link {
+.navigation__link,
+.navigation__link-header {
     font-size: 22px;
     line-height: 50px;
     text-transform: uppercase;
@@ -134,7 +135,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
 
     .container__header {
         display: grid;
