@@ -2,7 +2,7 @@
     padding-top: 38px;
 }          
 
-.header__menu-grid {
+.container__header-vibes-grid-menu {
     display: none;
 }
 
@@ -56,17 +56,17 @@
     color: var(--main-color);
 }
 
-.header__button-back {
+.header-button-back {
     color: var(--main-color);
 }
 
-.header__button-link {
+.header-button-link {
     font-size: 22px;
     line-height: 28px;
     font-weight: var(--main-weight);
 }
 
-.header__button-link:before {
+.header-button-link:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -98,7 +98,7 @@
 
 @media (max-width: 1024px) {
 
-    .header__logo-grid {
+    .container__header-vibes-grid-logo {
         max-width: 87px;
     }
 
@@ -107,7 +107,7 @@
         font-size: 18px;
     }
 
-    .header__button-link {
+    .header-button-link {
         font-size: 28px;
         line-height: 24px;
     }
@@ -134,14 +134,14 @@
         display: none;
     }
 
-    .header__menu-grid {
+    .container__header-vibes-grid-menu {
         display: block;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         align-self: center;
     }
 
-    .header__logo-grid {
+    .container__header-vibes-grid-logo {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         max-width: 85px;
@@ -169,7 +169,7 @@
         width: 39px;
     }
 
-    .header__logo-grid {
+    .container__header-vibes-grid-logo {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
         max-width: 66px;
@@ -191,12 +191,12 @@
         margin-bottom: 20px;
     }
 
-    .header__button-link {
+    .header-button-link {
         font-size: 12px;
         line-height: 16px;
     }
 
-    .header__button-link:before {
+    .header-button-link:before {
         width: 16px;
         height: 20px;
         margin-right: 5px;
