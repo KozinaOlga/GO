@@ -1,3 +1,7 @@
+.rooms {
+    margin: 0 auto;
+}
+
 .rooms__title {
     text-align: center;
     font-weight: var(--main-weight);
@@ -15,9 +19,10 @@
 
 .rooms__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, mimax(280px, 1fr));
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+    justify-content: center;
 }
 
 .rooms__item_image-vibes {
@@ -83,6 +88,37 @@
         line-height: 50px; 
         left: 25%;
         max-width: 116px;
+    }
+}
+
+@media (max-width: 600px) {
+    .rooms__title {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .rooms__link_text {
+        font-size: 20px;
+        line-height: 30px; 
+        top: 30%;
+        left: 27%;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rooms__title {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .rooms__link_text {
+        font-size: 16px;
+        line-height: 16px; 
+        top: 30%;
+        max-width: 80px;
     }
 }
 
