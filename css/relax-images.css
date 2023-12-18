@@ -1,7 +1,3 @@
-/* .relax {
-    min-height: 708px;
-} */
-
 .relax__title {
     text-align: center;
     font-size: 40px;
@@ -20,8 +16,6 @@
 }
 
 .relax__item {
-    /* display: flex;
-    flex-direction: column; */
     position: relative;
     overflow: hidden;
     transition-timing-function: linear;

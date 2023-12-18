@@ -224,6 +224,7 @@ input[type="time"]:focus {
     outline: none;
 }
 
+
 @media all and (max-width: 1400px) {
 
     .booking__title {
@@ -236,6 +237,68 @@ input[type="time"]:focus {
         font-size: 20px;
         line-height: 24px;
         padding: 7px 15px;
+    }
+}
+
+@media all and (max-width: 1240px) {
+
+    input[type="text"] {
+        width: 260px;
+    }
+
+    input[type="tel"] {
+        width: 260px;
+    }
+
+    input[type="text"].booking__input-number {
+        width: 300px;
+    }
+
+    .button {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 15px 50px;
+    } 
+}
+
+@media all and (max-width: 1120px) {
+
+    input[type="text"] {
+        width: 251px;
+    }
+
+    input[type="tel"] {
+        width: 252px;
+    }
+
+    .booking__wrapper-block {
+        gap: 10px 30px;
+    }
+
+    .button {
+        font-size: 17px;
+        line-height: 23px;
+        padding: 15px 45px;
+    } 
+}
+
+
+@media all and (max-width: 1080px) {
+
+    input[type="text"] {
+        max-width: 241px;
+    }
+
+    input[type="tel"] {
+        max-width: 241px;
+    }
+
+    input[type="text"].booking__input-number {
+        max-width: 280px;
+    }
+
+    .booking__wrapper-block {
+        gap: 10px 10px;
     }
 }
 
@@ -260,7 +323,7 @@ input[type="time"]:focus {
     } 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 855px) {
 
     .booking__block {
         display: grid;

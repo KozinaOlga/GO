@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 823px;
+    border: 1px solid red;
 }
 
 .banner {
@@ -59,7 +60,6 @@
     align-items: center;
     justify-content: end;
     text-align: center;
-    width: 166px; 
 }
 
 .banner-block-column__text-color {
@@ -80,13 +80,12 @@
 .banner-block-column-small__text {
     font-size: 30px;
     line-height: 35px;
+    max-width: 166px;
 }
 
 .button-banner-color {
-    text-align: center;
-    align-content: center;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: var(--main-weight);
     line-height: 30px;
     border-radius: 10px;
     text-transform: uppercase;
@@ -101,6 +100,18 @@
     z-index: 1;
     background-color: transparent;
     border: none;
+}
+
+.banner__svg {
+    display: block;
+    width: 97px;
+    height: 97px;
+    outline: 1px solid transparent;
+    fill: transparent;
+    outline-offset: 3px;
+    transition-property: color, outline-colot;
+    transition-duration: 0.3s, 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 .button-banner-color:hover {
@@ -118,17 +129,6 @@
     border: none;
 }
 
-.banner__svg {
-    display: block;
-    width: 97px;
-    height: 97px;
-    outline: 1px solid transparent;
-    fill: transparent;
-    outline-offset: 3px;
-    transition-property: color, outline-colot;
-    transition-duration: 0.3s, 0.2s;
-    transition-timing-function: ease-in-out;
-}
 
 .banner__svg rect {
     fill: var(--main-color);
@@ -170,33 +170,61 @@
 @media (max-width: 1290px) {
     .banner:before {
         top: 17%;
-        left: 35%;
+        left: 40%;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1260px) {
     .banner__title {
         font-size: 130px;
         line-height: 130px;
     }
+
+    .banner:before {
+        left: 40%;
+    }
 }
+
+@media (max-width: 1250px) {
+    .banner:before {
+        left: 38%;
+    }
+}
+
 
 @media (max-width: 1210px) {
     .banner:before {
-        left: 33%;
+        left: 37%;
     }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1190px) {
     .banner:before {
-        width: 580px;
-        left: 35%;
+        left: 36%;
+    }
+
+    .button-banner-color {
+        padding: 12px 37px;      
     }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1116px) {
+
+    .banner__title {
+        font-size: 125px;
+    }
+
     .banner:before {
-        left: 30%;
+        top: 20%;
+        left: 37%;
+        width: 570px;
+
+    }
+
+    .button-banner-color {
+        font-size: 24px;
+        line-height: 24px;
+        padding: 10px 35px;      
     }
 }
 
@@ -292,6 +320,7 @@
     .button-banner-color { 
         font-size: 16px; 
         line-height: 24px;
+        padding: 11px 34px;      
     }
 
     .banner-block-wrapper {
