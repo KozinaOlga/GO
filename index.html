@@ -20,19 +20,19 @@
 
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item">
+                        <li class="navigation__item" tabindex="0">
                             <a href="#rooms__title" class="navigation__link">залы</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="navigation__item" tabindex="0">
                             <a href="#about__title" class="navigation__link">О нас</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="navigation__item" tabindex="0">
                             <a href="#booking__title" class="navigation__link">Бронь</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="navigation__item" tabindex="0">
                             <a href="#comments__title" class="navigation__link">отзывы</a>
                         </li>
-                        <li class="navigation__item">
+                        <li class="navigation__item" tabindex="0">
                             <a href="#address-title" class="navigation__link">Контакты</a>
                         </li>
                     </ul>
@@ -124,23 +124,28 @@
                     <h2 class="rooms__title" id="rooms__title">Наши залы</h2>
                     <ul class="rooms__list">
                         <li class="rooms__item rooms__item_image-vibes">
-                            <a class="rooms__link rooms__link_text" href="vibes.html">
-                                <img src="image/vibes.jpg" class="img-rooms" alt="80's vibes">80's vibes
+                            <a class="rooms__link" href="vibes.html">
+                                <img src="image/vibes.jpg" class="img-rooms" alt="80's vibes">
+                                <span class="rooms__link_text">80's vibes</span>
                             </a>
+                            
                         </li>
                         <li class="rooms__item rooms__item_image-starwars">
-                            <a class="rooms__link rooms__link_text" href="starwars.html">
-                                <img src="image/starwars.jpg" class="img-rooms" alt="Звездные войны">Star wars
+                            <a class="rooms__link" href="starwars.html">
+                                <img src="image/starwars.jpg" class="img-rooms" alt="Звездные войны">
+                                <span class="rooms__link_text">Star wars</span>
                             </a>
                         </li>
                         <li class="rooms__item">
-                            <a class="rooms__link rooms__link_text rooms__item_image-wildwest" href="wildwest.html">
-                                <img src="image/wildwest.jpg" class="img-rooms" alt="Дикий запад">Wild west
+                            <a class="rooms__link rooms__item_image-wildwest" href="wildwest.html">
+                                <img src="image/wildwest.jpg" class="img-rooms" alt="Дикий запад">
+                                <span class="rooms__link_text">Wild west</span>
                             </a>
                         </li>
                         <li class="rooms__item">
-                            <a class="rooms__link rooms__link_text rooms__item_image-neon" href="neon.html">
-                                <img src="image/neon-sryle.jpg" class="img-rooms" alt="Неоновый стиль">Neon style
+                            <a class="rooms__link rooms__item_image-neon" href="neon.html">
+                                <img src="image/neon-sryle.jpg" class="img-rooms" alt="Неоновый стиль">
+                                <span class="rooms__link_text">Neon style</span>
                             </a>
                         </li>
                     </ul>
@@ -159,19 +164,19 @@
                             <h4 class="booking__title-small">Выбери зал</h4>
 
                             <fieldset class="booking__choose-room">
-                                <label class="booking-radio-label">
+                                <label class="booking-radio-label" tabindex="0">
                                     <input type="hidden" name="rooms" value="vibes" class="booking-radio">80's vibes
                                 </label>
 
-                                <label class="booking-radio-label">
+                                <label class="booking-radio-label" tabindex="0">
                                     <input type="hidden" name="rooms" value="star_wars" class="booking-radio">Star wars
                                 </label>
 
-                                <label class="booking-radio-label">
+                                <label class="booking-radio-label" tabindex="0">
                                     <input type="hidden" name="rooms" value="wild_west" class="booking-radio">Wild west
                                 </label>
 
-                                <label class="booking-radio-label">
+                                <label class="booking-radio-label" tabindex="0">
                                     <input type="hidden" name="rooms" value="neon_style" class="booking-radio">Neon style
                                 </label>
                             </fieldset>
@@ -182,19 +187,19 @@
                                 <div class="booking__block">
                                     <fieldset class="booking booking-fieldset-console">
                                         <legend class="booking__subtitle-legent">Приставка</legend>
-                                        <label class="booking__label">
+                                        <label class="booking__label" tabindex="0">
                                             <input type="radio" name="play" value="play_station" class="booking__input">Play station
                                         </label>
 
-                                        <label class="booking__label">
+                                        <label class="booking__label" tabindex="0">
                                             <input type="radio" name="play" value="sega" class="booking__input">Sega Mega Drive
                                         </label>
 
-                                        <label class="booking__label">
+                                        <label class="booking__label" tabindex="0">
                                             <input type="radio" name="play" value="x_box" class="booking__input">X_box One S
                                         </label>
 
-                                        <label class="booking__label">
+                                        <label class="booking__label" tabindex="0">
                                             <input type="radio" name="play" value="dendy" class="booking__input">Dendy
                                         </label>
                                     </fieldset>
@@ -250,7 +255,7 @@
                                         </label>
                                     </fieldset>
 
-                                    <fieldset class="booking__wrapper-block-interval booking__wrapper-block-interval-row">
+                                    <fieldset class="booking__wrapper-block-interval booking__wrapper-block-interval-row booking__wrapper-block-grid-name">
                                         <label class="booking__wrapper-name">Имя
                                             <input type="text" name="text" required class="booking__input-name">
                                         </label>
@@ -260,7 +265,7 @@
                                         </label>
                                     </fieldset>
 
-                                    <fieldset class="booking__wrapper-block-interval booking__wrapper-block-interval-row">
+                                    <fieldset class="booking__wrapper-block-interval booking__wrapper-block-interval-row booking__wrapper-block-grid-phone">
                                         <label class="booking__wrapper-phone">Телефон
                                             <input type="tel" name="phone" required class="booking__input-phone" pattern="\d">
                                         </label>

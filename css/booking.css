@@ -24,7 +24,7 @@
     margin-bottom: 60px;
 }
 
-.booking__subtitle-legent-title, 
+.booking__subtitle-legent-title,
 .booking__subtitle-legent{
     font-size: 24px;
     line-height: 28px;
@@ -260,7 +260,7 @@ input[type="time"]:focus {
         font-size: 18px;
         line-height: 24px;
         padding: 15px 50px;
-    } 
+    }
 }
 
 @media all and (max-width: 1120px) {
@@ -281,7 +281,28 @@ input[type="time"]:focus {
         font-size: 17px;
         line-height: 23px;
         padding: 15px 45px;
-    } 
+    }
+}
+
+@media (max-width: 1060px) {
+
+    input[type="text"] {
+        width: 220px;
+    }
+
+    input[type="tel"] {
+        width: 220px;
+    }
+
+    input[type="text"].booking__input-number {
+        width: 280px;
+    }
+
+    .button {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 10px 27px;
+    }
 }
 
 
@@ -321,11 +342,11 @@ input[type="time"]:focus {
     .button {
         font-size: 18px;
         line-height: 24px;
-        padding: 13px 45px;
-    } 
+        padding: 13px 37px;
+    }
 }
 
-@media all and (max-width: 855px) {
+@media all and (max-width: 900px) {
 
     .booking__block {
         display: grid;
@@ -373,21 +394,40 @@ input[type="time"]:focus {
     }
 
     .block-date {
-        display: flex;
         flex-direction: column;
     }
-    
+
+
     .booking__wrapper-block {
-        display: flex;
-        flex-wrap: nowrap;
-        column-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(134px 134px 300px);
+        grid-template-rows: 1fr, 52px;
+        gap: 20px 10px;
+        margin-bottom: 35px;
+        justify-content: space-between;
+    }
+
+    .booking__label-date {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .booking__label-time {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .booking__wrapper-number {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
     }
 
     .booking__wrapper-block-interval-row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+        gap: 20px 20px;
+    } 
 
     input[type="text"].booking__input-name,
     input[type="tel"].booking__input-phone {
@@ -396,28 +436,102 @@ input[type="time"]:focus {
 
     input[type="text"].booking__input-surename,
     input[type="text"].booking__input-email {
-        width: 300px;
-    } 
+        width: 280px;
+    }
+
+    .button {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 10px 27px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .booking__wrapper-block {
+        display: grid;
+        grid-template-columns: repeat(134px 134px 300px);
+        grid-template-rows: 1fr, 52px;
+        column-gap: 15px;
+        margin-bottom: 35px;
+        justify-content: space-between;
+    }
+
+    .booking__label-date {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
 
     .booking__label-time {
-        margin-right: 95px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .booking__wrapper-number {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+
+    .booking__wrapper-block-interval {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 108px; 
+        border: 1px solid green;
+    }
+
+
+    input[type="text"],
+    input[type="tel"] {
+        max-width: 300px;
+    }
+
+    .booking__button-block-date {
+        justify-content: flex-end;
     }
 
     .button {
         font-size: 22px;
-        line-height: 28px;
+        line-height: 18px;
         padding: 16px 50px;
     }
 }
 
 
-@media all and (max-width: 720px) {
+
+
+
+@media (max-width: 666px) {
+
+    .booking__label-time,
+    .booking__label-date {
+        margin: 0 auto;
+    }
+
+    input[type="date"].booking__date-size,
+    input[type="time"].booking__date-size,
+    input[type="text"].booking__input-name,
+    input[type="tel"].booking__input-phone,
+    input[type="text"].booking__input-number {
+        max-width: 300px;
+    }
+
+    .booking__wrapper-surname {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
     .booking__wrapper-block {
         display: grid;
-        grid-template-columns: 134px 134px 300px;
-        grid-template-rows: 1fr, 52px;
+        grid-template-columns: repeat(2, 134px);
+        grid-template-rows: repeat(2, 1fr);
         gap: 15px 12px;
         margin-bottom: 35px;
+        justify-content: center;
+        border: 1px solid green;
     }
 
     .booking__date-size {
@@ -435,46 +549,9 @@ input[type="time"]:focus {
         grid-row: 2 / 3;
     }
 
-    .booking__wrapper-block-interval {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .booking__wrapper-block-interval-row {
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .booking__button-block-date {
-        justify-content: center;
-    }
-} 
-
-@media (max-width: 666px) {
-    .booking__wrapper-block {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3);
-        justify-content: center; 
-        margin: 0 auto;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .booking__label-time,
-    .booking__label-date {
-        margin: 0 auto;
-    }
-
-    input[type="date"].booking__date-size,
-    input[type="time"].booking__date-size,
-    input[type="text"].booking__input-name,
-    input[type="tel"].booking__input-phone {
-        width: 300px;
-    }
-
-    .booking__wrapper-surname {
-        margin-bottom: 20px;
+    input[type="date"],
+    input[type="time"] {
+        width: 134px;
     }
 }
 
@@ -573,12 +650,9 @@ input[type="time"]:focus {
         margin-bottom: 25px;
     }
 
-    input[type="text"].booking__input-name,
-    input[type="tel"].booking__input-phone,
-    input[type="text"].booking__input-surename,
-    input[type="text"].booking__input-email,
-    input[type="text"].booking__input-number {
-        width: 280px;
+    input[type="tel"],
+    input[type="text"] {
+        max-width: 280px;
     }
 
     input[type="date"].booking__date-size,
@@ -598,7 +672,7 @@ input[type="time"]:focus {
     .button {
         line-height: 26px;
         padding: 17px 38px;
-    } 
+    }
 
     .block-date {
         margin-bottom: 35px;

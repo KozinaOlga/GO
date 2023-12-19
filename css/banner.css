@@ -13,7 +13,7 @@
     position: absolute;
     content: "";
     top: 10%;
-    left: 40%;
+    left: 45%;
     width: 675px;
     min-height: 762px;
     background-image: url("../image/gameoverVRman.png");
@@ -161,46 +161,63 @@
 }
 
 @media (max-width: 1370px) {
-    .banner:before {
-        width: 625px;
-        min-height: 762px;
-    }
-}
-
-@media (max-width: 1290px) {
-    .banner:before {
-        top: 17%;
-        left: 40%;
-    }
-}
-
-@media (max-width: 1260px) {
     .banner__title {
         font-size: 130px;
         line-height: 130px;
     }
 
     .banner:before {
+        width: 640px;
+        min-height: 720px;
+        top: 15%;
+        left: 44%;;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .banner__title {
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    .banner:before {
+        width: 640px;
         left: 40%;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1260px) {
+    .banner__title {
+        font-size: 119px;
+        line-height: 119px;
+    }
+
     .banner:before {
-        left: 38%;
+        left: 39%;
     }
 }
 
 
 @media (max-width: 1210px) {
+    .banner__title {
+        font-size: 110px;
+        line-height: 110px;
+    }
+    
     .banner:before {
-        left: 37%;
+        left: 36%;
     }
 }
 
 @media (max-width: 1190px) {
+    .banner__title {
+        font-size: 108px;
+        line-height: 108px;
+    }
+
     .banner:before {
-        left: 36%;
+        left: 35%;
     }
 
     .button-banner-color {
@@ -208,28 +225,39 @@
     }
 }
 
-@media (max-width: 1116px) {
+@media (max-width: 1160px) and (min-width: 1025px){
 
     .banner__title {
-        font-size: 125px;
+        font-size: 100px;
+        line-height: 100px;
     }
 
     .banner:before {
-        top: 20%;
-        left: 37%;
-        width: 570px;
-
+        width: 520px;
+        min-height: 660px;
+        top: 18%;
+        left: 38%;
     }
 
     .button-banner-color {
         font-size: 24px;
         line-height: 24px;
-        padding: 10px 35px;      
+        padding: 10px 25px;
+    }
+
+    .banner-container {
+        min-height: 700px;
     }
 }
 
 
+
+
 @media (max-width: 1024px) {
+
+    .banner-container {
+        min-height: 583px;
+    }
 
     .banner-block-text {
         margin-bottom: 58px;
@@ -237,7 +265,7 @@
 
     .banner:before {
         top: 22%;
-        left: 50%;
+        left: 46%;
         width: 453px;
         min-height: 520px;
     }
@@ -283,8 +311,41 @@
     }
 }
 
+@media (max-width: 950px) {
+    
+    .banner__title {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    
+    .banner:before {
+        left: 45%;
+        width: 440px;
+    } 
+}
 
-@media (max-width: 768px) {
+@media (max-width: 890px) {
+    
+    .banner__title {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    
+    .banner:before {
+        left: 44%;
+        width: 430px;
+    } 
+}
+
+@media (max-width: 800px) {
+
+    .banner-container {
+        min-height: 537px;
+    }
+
+    .banner:before {
+        top: 17%;
+    } 
 
     .banner__title {
         font-size: 86px;
